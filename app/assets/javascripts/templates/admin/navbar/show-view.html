@@ -1,0 +1,23 @@
+<div class="container">
+  <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </a>
+  <a class="brand">Blogolitious</a>
+  <div class="nav-collapse collapse">
+    <% if(user.created_at) { %>
+      <div class="menu-items"></div>
+    <% } %>
+    <ul class="nav pull-right">
+      <li class="divider-vertical"></li>
+      <% if(user.created_at) { %>
+        <li><a class="logout" href="#" data-toggle='collapse' data-target='.nav-collapse'>Log out</a></li>
+      <% }else{ %>
+        <li><a class="signin" href="#" data-toggle='collapse' data-target='.nav-collapse'>Sign In</a></li>
+        <li class='divider-vertical'></li>
+        <li><a class='register' href='#' data-toggle='collapse' data-target='.nav-collapse'>Register</a></li>
+      <% } %>
+    </ul>
+  </div>
+</div>

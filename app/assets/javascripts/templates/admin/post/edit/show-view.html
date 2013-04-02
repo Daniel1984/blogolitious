@@ -1,0 +1,48 @@
+<div class='control-group'>
+  <label class='control-label'>Title:</label>
+  <div class='controls'>
+    <input type='text' name='title' placeholder="Title" value="<%= title %>">
+  </div>
+</div>
+
+<div class='control-group'>
+  <label class='control-label'>Author:</label>
+  <div class='controls'>
+    <input type='text' name='author' placeholder="Author" value="<%= author %>">
+  </div>
+</div>
+
+<div class='control-group'>
+  <label class='control-label'>Category:</label>
+  <div class='controls'>
+    <select name='category'>
+      <option value=''>Please Select</option>
+      <option value='Posts'>Posts</option>
+      <option value='Pictures'>Pictures</option>
+      <option value='Videos'>Videos</option>
+    </select>
+  </div>
+</div>
+
+<div class='control-group'>
+  <label class='control-label'>Publish:</label>
+  <div class='controls'>
+    <label class='checkbox'>
+      <input type='checkbox' name='published'>
+      Make visible to public
+    </label>
+  </div>
+</div>
+
+
+<div class='control-group'>
+  <label class='control-label'>Lead:</label>
+  <div class='controls'>
+    <textarea rows='5' name="lead"><%= lead %></textarea> 
+  </div>
+</div>
+
+<div class='control-group'>
+  <label class='control-label'>Body:</label>
+  <div class='controls editor'></div>
+</div>

@@ -1,0 +1,7 @@
+*.swp
+.[.swp
+*.lock
+node_modules
+
+cache/less/stylesheets/*.css
+cache/less/stylesheets/**/*.css
